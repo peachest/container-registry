@@ -14,6 +14,6 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }}
       - name: Docker pull and push
         run: |
-          docker pull gcr.io/kubeflow/pipeline:v1.2.0  
-          docker tag  gcr.io/kubeflow/pipeline:v1.2.0  ghcr.io/peachest/kubeflow/pipeline:v1.2.0       
-          docker push ghcr.io/peachest/kubeflow/pipeline:v1.2.0
+          docker pull gcr.io/kubeflow/pipelines:v1.2.0
+          docker tag  gcr.io/kubeflow/pipelines:v1.2.0  ghcr.io/peachest/kubeflow/pipelines:v1.2.0
+          docker push ghcr.io/peachest/kubeflow/pipelines:v1.2.0
